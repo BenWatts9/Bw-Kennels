@@ -4,8 +4,6 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router } from "react-router-dom"
 import { Kennel } from './components/Kennel';
 import './index.css';
-console.log("Hello, Beautiful")
-
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
