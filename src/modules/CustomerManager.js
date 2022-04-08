@@ -25,3 +25,13 @@ export const deleteCustomer = id => {
         body: JSON.stringify(newCustomer)
     }).then(response => response.json())
   }
+
+  export const updateCustomer  = (editedCustomer) => {
+    return fetch(`${remoteURL}/customers/${editedCustomer.id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(editedCustomer)
+    }).then(data => data.json());
+  }

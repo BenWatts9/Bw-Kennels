@@ -40,6 +40,12 @@ export const CustomerForm = () => {
                     <input type="text" id="address" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Customer Address" value={customer.address}></input>
                 </div>
             </fieldset>
+            <fieldset>
+                <div className="form-group">
+                    <label htmlFor="email">Customer Email</label>
+                    <input type="text" id="email" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Customer Email" value={customer.email}></input>
+                </div>
+            </fieldset>
             <button type="button" className="btn btn-primary"
 				onClick={handleClickSaveCustomer}>
 				Save Customer
